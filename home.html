@@ -28,20 +28,6 @@
   <body>
 
     <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
-
-      <!-- Your customer chat code -->
-      <div class="fb-customerchat"
-        attribution="setup_tool"
-        page_id="164763664357532">
-      </div>
 
     <!-- <nav class="site-header sticky-top py-1"> -->
     <!-- <nav class="navbar navbar-light bg-light">
@@ -96,6 +82,13 @@
       <div class="col-md-5 p-lg-5 mx-auto my-5 text-center">
         <h2 class="font-weight-normal text-left h2-text">Dear Parents 👪,</h2>
         <p class="lead font-weight-normal text-left pb-4 answer-text">We believe that Maker Library should exist. We would like to know if you believe it too. Please chat with us! </p>
+        <div id="fb-root"></div>
+
+        <!-- Your customer chat code -->
+        <div class="fb-customerchat"
+          attribution="setup_tool"
+          page_id="164763664357532">
+        </div>
     </div>
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
@@ -170,6 +163,13 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="jquery-slim.min.js"><\/script>')</script>
     <script src="popper.min.js"></script>
