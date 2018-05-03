@@ -27,6 +27,22 @@
 
   <body>
 
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution="setup_tool"
+        page_id="164763664357532">
+      </div>
+
     <!-- <nav class="site-header sticky-top py-1"> -->
     <!-- <nav class="navbar navbar-light bg-light">
       <div class="container text-center">
@@ -46,22 +62,13 @@
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="first-slide" src="images/slidetwo2.gif" alt="First slide">
-            <!-- <div class="container">
-              <div class="carousel-caption bg-secondary">
-                <h1>Awesome MakerKits from awesome creators</h1>
-              </div>
-            </div> -->
           </div>
           <div class="carousel-item">
-            <img class="second-slide" src="images/slidethree.gif" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="third-slide" src="images/slideone.gif" alt="Third slide">
+            <img class="second-slide" src="images/slideone.gif" alt="Second slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -76,10 +83,11 @@
 
 
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-left bg-light">
-      <div class="p-lg-1 mx-auto my-1">
-        <h1 class="font-weight-normal question-text text-center">Those above ☝ are Maker Kits from awesome companies for kids to learn coding 💻 and other important skills for the future. </h1>
-        <h4 class="font-weight-normal question-text text-center">But there are so many and they can be very costly to own them. </h4>
-        <h4 class="font-weight-normal answer-text text-center text-success">What if there is a space where kids 👦👧 play and share a library of Maker Kits?</h4>
+      <div class="p-lg-1 mx-auto my-1 text-center">
+        <h1 class="font-weight-normal question-text">Those above ☝ are Maker Kits from awesome companies for kids to learn coding 💻 and other important skills for the future. </h1>
+        <h4 class="font-weight-normal question-text">But there are so many and they can be very costly to own them. </h4>
+        <h4 class="font-weight-normal answer-text text-success">What if there is a space where kids 👦👧 play and share a library of Maker Kits?</h4>
+        <a class="btn btn-outline-success btn-lg btn-bg mt-4" href="https://www.eventbrite.co.uk/e/makefuture-meet-founders-and-try-make-boxes-tickets-44952314583">Meet MakerLibrary on 12 May</a>
       </div>
     </div>
 
@@ -87,11 +95,8 @@
     <div class="position-relative p-3 p-md-5 m-md-3 mainbg-image ">
       <div class="col-md-5 p-lg-5 mx-auto my-5 text-center">
         <h2 class="font-weight-normal text-left h2-text">Dear Parents 👪,</h2>
-        <p class="lead font-weight-normal text-left pb-4 answer-text">MakerLibrary is a new kind of playspace where your kids have fun playing, coding and making things but gain important digital skills and discover their interest and passion for the future.</p>
-        <a class="btn btn-outline-success btn-lg btn-bg" href="https://www.eventbrite.co.uk/e/makefuture-meet-founders-and-try-make-boxes-tickets-44952314583">Meet MakerLibrary on 12 May</a>
-      </div>
+        <p class="lead font-weight-normal text-left pb-4 answer-text">We believe that Maker Library should exist. We would like to know if you believe it too. Please chat with us! </p>
     </div>
-
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
       <div class="orangebg mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
@@ -154,7 +159,7 @@
         <div class="col-6 col-md">
           <h5>About</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="https://drive.google.com/file/d/1HsVNlonBXzD0i9xinx_rrRNv-5syudap/view?usp=sharing">Find out more!</a></li>
+            <li><a class="text-muted" href="https://drive.google.com/open?id=18PWztvclj6E-03HSSyFKTFFNeteSc8Z4">Find out more!</a></li>
           </ul>
         </div>
       </div>
